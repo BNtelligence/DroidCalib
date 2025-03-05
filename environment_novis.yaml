@@ -1,4 +1,9 @@
-name: droidenv
+# cuda 12.8
+# pip install torch-scatter -f https://data.pyg.org/whl/torch-2.5.1+cu124.html
+# pip install evo --upgrade --no-binary evo
+# MAX_JOBS=32 python setup.py install
+
+name: droidenv-pipeaid
 channels:
   - rusty1s
   - pytorch
@@ -6,11 +11,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - pytorch-scatter
-  - torchaudio
-  - torchvision
-  - pytorch=1.10
-  - cudatoolkit=11.3
+  - python=3.9.21
+  - torchaudio=2.5.1
+  - torchvision=0.20.1
+  - pytorch=2.5.1
   - tensorboard
   - scipy
   - opencv
